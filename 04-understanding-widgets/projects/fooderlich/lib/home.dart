@@ -12,7 +12,7 @@ class Home extends StatefulWidget {
 class HomeState extends State<Home> {
   int _selectedItem = 0;
   static List pagesList = <Widget>[
-    Card1(),
+    const Card1(),
     Container(
       color: Colors.green,
     ),
