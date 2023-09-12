@@ -4,13 +4,10 @@ A new Flutter project.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+In this section, I'm going to start building a complete recipe app called Fooderlich.
 
-A few resources to get you started if this is your first Flutter project:
+I will gain an understanding of the various widgets available in Flutter and use them extensively.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Additionally, I'll learn about the inner workings of widgets and how they function behind the scenes.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+ After that, I'll explore layout widgets, scrollable widgets, and interactive widgets in more detail.
