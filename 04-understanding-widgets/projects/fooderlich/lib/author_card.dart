@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'circle_image.dart';
+import 'fooderlich_theme.dart';
 
 class AuthorCard extends StatelessWidget {
   final String authorName;
@@ -26,14 +27,15 @@ class AuthorCard extends StatelessWidget {
             ),
             const SizedBox(width: 8),
             Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
                   authorName,
-                  style: Theme.of(context).textTheme.titleLarge,
+                  style: FooderlichTheme.lightTextTheme.titleLarge,
                 ),
                 Text(
                   title,
-                  style: Theme.of(context).textTheme.titleMedium,
+                  style: FooderlichTheme.lightTextTheme.titleMedium,
                 )
               ],
             )
