@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fooderlich/card3.dart';
 import 'card1.dart';
 import 'card2.dart';
 
@@ -12,13 +13,7 @@ class Home extends StatefulWidget {
 
 class HomeState extends State<Home> {
   int _selectedItem = 0;
-  static List pagesList = <Widget>[
-    const Card1(),
-    const Card2(),
-    Container(
-      color: Colors.blue,
-    )
-  ];
+  static List pagesList = <Widget>[const Card1(), const Card2(), const Card3()];
   void _onItemTapped(selectedItem) {
     setState(() {
       _selectedItem = selectedItem;
