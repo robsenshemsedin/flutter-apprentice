@@ -3,7 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 
 class FooderlichTheme {
   static final lightTextTheme = TextTheme(
-    titleLarge: GoogleFonts.openSans(color: Colors.black),
+    titleLarge: GoogleFonts.openSans(color: Colors.black, fontSize: 18),
     titleMedium: GoogleFonts.openSans(color: Colors.black),
     bodyMedium: GoogleFonts.openSans(
         fontSize: 14, fontWeight: FontWeight.w700, color: Colors.black),
