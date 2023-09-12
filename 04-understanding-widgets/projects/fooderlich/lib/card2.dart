@@ -17,7 +17,7 @@ class Card2 extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            AuthorCard(
+            const AuthorCard(
               authorName: 'Mike Katz',
               title: 'Smoothie Connoisseur',
               imageProvider: AssetImage('assets/images/author_katz.jpeg'),
