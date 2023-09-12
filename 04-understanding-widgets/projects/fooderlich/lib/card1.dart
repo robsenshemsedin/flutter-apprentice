@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
 
-import 'fooderlich_theme.dart';
-
 class Card1 extends StatelessWidget {
   final String category = 'Editor\'s Choice';
   final String title = 'The Art of Dough';
   final String description = 'Learn to make the perfect bread.';
   final String chef = 'Ray Wenderlich';
+  static const String cardImage = 'assets/images/mag1.png';
+
+  const Card1({super.key});
   @override
   Widget build(context) {
     return Center(
@@ -16,7 +17,7 @@ class Card1 extends StatelessWidget {
         decoration: const BoxDecoration(
             color: Colors.red,
             image: DecorationImage(
-                image: AssetImage('assets/mag1.png'), fit: BoxFit.cover),
+                image: AssetImage(cardImage), fit: BoxFit.cover),
             borderRadius: BorderRadius.all(Radius.circular(7))),
         child: Stack(
           children: [
