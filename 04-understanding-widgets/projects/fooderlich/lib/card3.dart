@@ -11,18 +11,19 @@ class Card3 extends StatelessWidget {
           width: 350,
           height: 450,
         ),
-        decoration: const BoxDecoration(
+        decoration: BoxDecoration(
+          color: Colors.black.withOpacity(0.9),
           image: DecorationImage(
             image: AssetImage('assets/images/mag2.png'),
             fit: BoxFit.cover,
           ),
           borderRadius: BorderRadius.all(Radius.circular(10.0)),
         ),
-        child: const Stack(
+        child: Stack(
           children: [
-            // TODO 5: add dark overlay BoxDecoration
-            // TODO 6: Add Container, Column, Icon and Text
-            // TODO 7: Add Center widget with Chip widget
+            Container(
+              color: Colors.black.withOpacity(0.6),
+            )
           ],
         ),
       ),
