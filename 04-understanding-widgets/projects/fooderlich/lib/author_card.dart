@@ -18,7 +18,7 @@ class AuthorCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.all(16),
-      child: Row(children: [
+      child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
         Row(
           children: [
             CircleImage(
@@ -38,9 +38,17 @@ class AuthorCard extends StatelessWidget {
                   style: FooderlichTheme.lightTextTheme.titleMedium,
                 )
               ],
-            )
+            ),
           ],
-        )
+        ),
+        IconButton(
+          onPressed: () {
+            const snackBar = SnackBar(content: Text('Added to favorite.'));
+            ScaffoldMessenger.of(context).showSnackBar(snackBar);
+          },
+          icon: const Icon(Icons.favorite_border),
+          color: FooderlichTheme.lightThemeData.iconTheme.color,
+        ),
       ]),
     );
   }
